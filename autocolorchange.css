@@ -1,0 +1,9 @@
+#color-box {
+    width: 1000px;
+    height: 1000px;
+    background-color: red; /* Initial color */
+    text-align: center;
+   position: fixed;
+   
+  }
+  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="autocolorchange.css">
+</head>
+<body>
+    <div id="color-box">AUTO COLOR</div>
+
+   <script>
+    let colorBox = document.getElementById('color-box');
+
+// Array of colors to cycle through
+let colors = ['red', 'blue', 'green', 'orange', 'purple'];
+
+let currentIndex = 0;
+
+function changeColor() {
+  colorBox.style.backgroundColor = colors[currentIndex];
+  currentIndex = (currentIndex + 1) % colors.length; // Increment index, loop back to 0 when reaching the end
+}
+
+// Change color every 2 seconds (2000 milliseconds)
+setInterval(changeColor, 2000);
+
+   </script>
+
+</body>
+</html>
